@@ -15,7 +15,12 @@ namespace SiteMvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+
+            home.Nome = "Henry Hosken";
+            home.Email = "Henryhosken13@gmail.com";
+
+            return View(home);
         }
 
         public IActionResult Privacy()
